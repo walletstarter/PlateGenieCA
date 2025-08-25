@@ -1,0 +1,15 @@
+:root { color-scheme: light dark; font-family: ui-sans-serif, system-ui; }
+body { margin: 0; padding: 0; }
+.container { max-width: 880px; margin: 40px auto; padding: 0 16px; }
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+input, button, select { font: inherit; padding: 10px 12px; border-radius: 8px; border: 1px solid #9993; }
+button { cursor: pointer; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(120px,1fr)); gap: 10px; margin-top: 16px; }
+.card { border: 1px solid #9993; border-radius: 10px; padding: 10px; text-align: center; }
+.badge { display:inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; margin-top: 6px; }
+.badge.green { background: #2ecc7033; border: 1px solid #2ecc70; }
+.badge.red { background: #e74c3c33; border: 1px solid #e74c3c; }
+.badge.gray { background: #95a5a633; border: 1px solid #95a5a6; }
+small.hint { color: #666; }
+.favs { margin-top: 20px; }
+hr { border: 0; border-top: 1px solid #9993; margin: 20px 0; }
