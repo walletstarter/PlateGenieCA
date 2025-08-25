@@ -65,7 +65,8 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>CA Plate Helper</h1>
+      <img src="/CA-Plate-Genie.gif" alt="Driving genie" className="hero" />
+      <h1>CA Plate Genie</h1>
       <p><small className="hint">Generate ideas and test availability for California personalized plates.</small></p>
 
       <div className="row">
