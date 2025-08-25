@@ -22,3 +22,11 @@ Minimal app to generate catchy California vanity plate ideas and check availabil
 ## Notes
 - If `HUGGING_FACE_API_KEY` is not set, suggestions still work via the rule-based fallback.
 - `CA_DMV_MODE=mock` for local dev; switch to `scrape` and set selectors/regex for real checks.
+
+## Deployment
+
+- **GitHub Pages**: Vite is configured with `base: "/PlateGenieCA/"` so the built assets resolve
+  correctly when hosted under `https://<user>.github.io/PlateGenieCA/`.
+  Build the frontend with `pnpm --filter web build` and publish the contents of `web/dist`.
+- **Separate backend**: when the API lives on another host, set `VITE_API_BASE` in a `web/.env`
+  file (see `web/.env.example`). The frontend will prepend this value to `/api` requests.
