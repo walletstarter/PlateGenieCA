@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "concurrently -k -n WEB,API -c green,cyan \"pnpm --filter web dev\" \"pnpm --filter server dev\"",
     "build": "pnpm -r build",
-    "start": "pnpm --filter server start"
+    "start": "pnpm --filter server start",
+    "test": "pnpm -r test"
   },
   "devDependencies": {
     "concurrently": "^9.0.0"

@@ -1,7 +1,7 @@
-import LRU from "lru-cache";
+import { LRUCache } from "lru-cache";
 
-export function makeTTLCache<T>(ttlMinutes: number) {
-  return new LRU<string, T>({
+export function makeTTLCache<T extends object>(ttlMinutes: number) {
+  return new LRUCache<string, T>({
     ttl: ttlMinutes * 60 * 1000,
     max: 5000,
   });
