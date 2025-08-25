@@ -5,6 +5,7 @@
     "module": "NodeNext",
     "strict": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "resolveJsonModule": true
   }
