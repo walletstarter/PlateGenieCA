@@ -74,7 +74,11 @@ export default function App() {
 
   return (
     <div className="container">
-      <img src="/CA-Plate-Genie.gif" alt="Driving genie" className="hero" />
+      <img
+        src={`${import.meta.env.BASE_URL}CA-Plate-Genie.gif`}
+        alt="Driving genie"
+        className="hero"
+      />
       <h1>{COPY.HERO.headline}</h1>
       <p><small className="hint">{COPY.HERO.subhead}</small></p>
 

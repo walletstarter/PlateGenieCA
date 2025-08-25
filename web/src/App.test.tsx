@@ -11,6 +11,9 @@ describe('App', () => {
     expect(heading).toBeInTheDocument();
 
     const img = screen.getByRole('img', { name: /Driving genie/i });
-    expect(img).toHaveAttribute('src', '/CA-Plate-Genie.gif');
+    expect(img).toHaveAttribute(
+      'src',
+      `${import.meta.env.BASE_URL}CA-Plate-Genie.gif`
+    );
   });
 });
